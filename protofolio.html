@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijayakumar M | Frontend Developer</title>
+    <style>
+        /* CSS STYLES */
+        :root {
+            --primary: #2563eb;
+            --secondary: #3b82f6;
+            --dark: #0f172a;
+            --bg-card: #1e293b;
+            --text: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--dark);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+            padding: 20px;
+        }
+
+        h1 { font-size: 3.5rem; letter-spacing: -1px; margin-bottom: 10px; }
+        .subtitle { font-size: 1.2rem; color: var(--secondary); font-weight: bold; text-transform: uppercase; margin-bottom: 25px; }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
+
+        section { margin-bottom: 80px; }
+        h2 { font-size: 2rem; border-bottom: 2px solid var(--primary); display: inline-block; margin-bottom: 30px; }
+
+        /* Skills Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-item {
+            background: var(--bg-card);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #334155;
+            transition: transform 0.3s;
+        }
+
+        .skill-item:hover { transform: translateY(-5px); border-color: var(--primary); }
+
+        /* Project Card */
+        .project-card {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .contact-info { color: var(--text-dim); margin-top: 10px; }
+        a { color: var(--secondary); text-decoration: none; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>VIJAYAKUMAR M</h1> <p class="subtitle">FRONTEND DEVELOPER</p> <p>Building responsive and visually appealing web applications.</p> <a href="#contact" class="btn">Get In Touch</a>
+    </header>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Front-End Developer with a strong foundation in HTML, CSS, and JavaScript. Passionate about creating responsive layouts and always eager to learn new skills[cite: 7, 8]. Graduated in Computer Science and Engineering from Government College of Engineering, Salem[cite: 38, 40, 41].</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="grid">
+                <div class="skill-item">HTML5 [cite: 15]</div>
+                <div class="skill-item">CSS3 [cite: 16]</div>
+                <div class="skill-item">JavaScript [cite: 17]</div>
+                <div class="skill-item">C & C++ [cite: 18]</div>
+                <div class="skill-item">Figma [cite: 32]</div>
+                <div class="skill-item">Adobe XD [cite: 34]</div>
+                <div class="skill-item">UI/UX Design [cite: 30, 31]</div>
+                <div class="skill-item">Canva [cite: 33]</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Project</h2>
+            <div class="project-card">
+                <h3>Ooty Tourism Website</h3> <p>A static website built to promote Ooty, a hill station in Tamil Nadu[cite: 24, 25].</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript [cite: 26, 27]</p>
+                <a href="https://vijayakumar86697-hue.github.io/Tourism-/" class="btn" target="_blank">View Project</a> </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:vijayakumar86697@gmail.com">vijayakumar86697@gmail.com</a></p> <p><strong>Phone:</strong> +91 86676 00997</p> <p><strong>Location:</strong> Perambalur, Tamil Nadu</p> </div>
+        </section>
+
+    </div>
+
+    <footer style="text-align: center; padding: 40px; color: var(--text-dim); font-size: 0.9rem;">
+        &copy; 2026 Vijayakumar M. Built with HTML & CSS.
+    </footer>
+
+</body>
+</html>
